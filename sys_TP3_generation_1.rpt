@@ -1,0 +1,109 @@
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/Users/khalil/Desktop/SESNUM/TP3/ --output-directory=C:/Users/khalil/Desktop/SESNUM/TP3/sys_TP3/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:C:/Users/khalil/Desktop/SESNUM/TP3/sys_TP3.sopcinfo --report-file=html:C:/Users/khalil/Desktop/SESNUM/TP3/sys_TP3.html --report-file=qip:C:/Users/khalil/Desktop/SESNUM/TP3/sys_TP3/synthesis/sys_TP3.qip --report-file=cmp:C:/Users/khalil/Desktop/SESNUM/TP3/sys_TP3.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C20F484C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/khalil/Desktop/SESNUM/TP3/sys_TP3.qsys --language=VHDL
+Progress: Loading TP3/sys_TP3.qsys
+Progress: Reading input file
+Progress: Adding CLK_50 [clock_source 13.0]
+Progress: Parameterizing module CLK_50
+Progress: Adding PLL [altera_up_clocks 13.0]
+Progress: Parameterizing module PLL
+Progress: Adding CPU_NIOS2 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module CPU_NIOS2
+Progress: Adding Ctrl_SDRAM [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module Ctrl_SDRAM
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding timer_0 [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module timer_0
+Progress: Adding KEY [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module KEY
+Progress: Adding LEDG [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module LEDG
+Progress: Adding LEDR [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module LEDR
+Progress: Adding HEX [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module HEX
+Progress: Adding SW [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module SW
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: sys_TP3: Generating sys_TP3 "sys_TP3" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 11 modules, 34 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 22 modules, 67 connections
+Info: merlin_domain_transform: After transform: 44 modules, 181 connections
+Info: merlin_router_transform: After transform: 55 modules, 214 connections
+Info: merlin_burst_transform: After transform: 56 modules, 217 connections
+Info: reset_adaptation_transform: After transform: 58 modules, 221 connections
+Info: merlin_network_to_switch_transform: After transform: 79 modules, 265 connections
+Info: merlin_width_transform: After transform: 81 modules, 271 connections
+Info: merlin_mm_transform: After transform: 81 modules, 271 connections
+Info: merlin_interrupt_mapper_transform: After transform: 82 modules, 274 connections
+Info: PLL: Starting Generation of Required Clocks for DE-Series Boards
+Info: PLL: "sys_TP3" instantiated altera_up_clocks "PLL"
+Info: CPU_NIOS2: Starting RTL generation for module 'sys_TP3_CPU_NIOS2'
+Info: CPU_NIOS2:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=sys_TP3_CPU_NIOS2 --dir=C:/Users/khalil/AppData/Local/Temp/alt8580_3777951895994360778.dir/0002_CPU_NIOS2_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/khalil/AppData/Local/Temp/alt8580_3777951895994360778.dir/0002_CPU_NIOS2_gen//sys_TP3_CPU_NIOS2_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: CPU_NIOS2: # 2020.11.14 16:44:22 (*) Starting Nios II generation
+Info: CPU_NIOS2: # 2020.11.14 16:44:22 (*)   Checking for plaintext license.
+Info: CPU_NIOS2: # 2020.11.14 16:44:22 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: CPU_NIOS2: # 2020.11.14 16:44:22 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: CPU_NIOS2: # 2020.11.14 16:44:22 (*)   LM_LICENSE_FILE environment variable is empty
+Info: CPU_NIOS2: # 2020.11.14 16:44:22 (*)   Plaintext license not found.
+Info: CPU_NIOS2: # 2020.11.14 16:44:22 (*)   No license required to generate encrypted Nios II/e.
+Info: CPU_NIOS2: # 2020.11.14 16:44:22 (*)   Elaborating CPU configuration settings
+Info: CPU_NIOS2: # 2020.11.14 16:44:22 (*)   Creating all objects for CPU
+Info: CPU_NIOS2: # 2020.11.14 16:44:26 (*)   Generating RTL from CPU objects
+Info: CPU_NIOS2: # 2020.11.14 16:44:26 (*)   Creating plain-text RTL
+Info: CPU_NIOS2: # 2020.11.14 16:44:32 (*) Done Nios II generation
+Info: CPU_NIOS2: Done RTL generation for module 'sys_TP3_CPU_NIOS2'
+Info: CPU_NIOS2: "sys_TP3" instantiated altera_nios2_qsys "CPU_NIOS2"
+Info: Ctrl_SDRAM: Starting RTL generation for module 'sys_TP3_Ctrl_SDRAM'
+Info: Ctrl_SDRAM:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=sys_TP3_Ctrl_SDRAM --dir=C:/Users/khalil/AppData/Local/Temp/alt8580_3777951895994360778.dir/0003_Ctrl_SDRAM_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/khalil/AppData/Local/Temp/alt8580_3777951895994360778.dir/0003_Ctrl_SDRAM_gen//sys_TP3_Ctrl_SDRAM_component_configuration.pl  --do_build_sim=0  ]
+Info: Ctrl_SDRAM: Done RTL generation for module 'sys_TP3_Ctrl_SDRAM'
+Info: Ctrl_SDRAM: "sys_TP3" instantiated altera_avalon_new_sdram_controller "Ctrl_SDRAM"
+Info: jtag_uart_0: Starting RTL generation for module 'sys_TP3_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=sys_TP3_jtag_uart_0 --dir=C:/Users/khalil/AppData/Local/Temp/alt8580_3777951895994360778.dir/0004_jtag_uart_0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/khalil/AppData/Local/Temp/alt8580_3777951895994360778.dir/0004_jtag_uart_0_gen//sys_TP3_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'sys_TP3_jtag_uart_0'
+Info: jtag_uart_0: "sys_TP3" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: timer_0: Starting RTL generation for module 'sys_TP3_timer_0'
+Info: timer_0:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=sys_TP3_timer_0 --dir=C:/Users/khalil/AppData/Local/Temp/alt8580_3777951895994360778.dir/0005_timer_0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/khalil/AppData/Local/Temp/alt8580_3777951895994360778.dir/0005_timer_0_gen//sys_TP3_timer_0_component_configuration.pl  --do_build_sim=0  ]
+Info: timer_0: Done RTL generation for module 'sys_TP3_timer_0'
+Info: timer_0: "sys_TP3" instantiated altera_avalon_timer "timer_0"
+Info: KEY: Starting Generation of Parallel Port
+Info: KEY: "sys_TP3" instantiated altera_up_avalon_parallel_port "KEY"
+Info: LEDG: Starting Generation of Parallel Port
+Info: LEDG: "sys_TP3" instantiated altera_up_avalon_parallel_port "LEDG"
+Info: LEDR: Starting Generation of Parallel Port
+Info: LEDR: "sys_TP3" instantiated altera_up_avalon_parallel_port "LEDR"
+Info: HEX: Starting Generation of Parallel Port
+Info: HEX: "sys_TP3" instantiated altera_up_avalon_parallel_port "HEX"
+Info: SW: Starting Generation of Parallel Port
+Info: SW: "sys_TP3" instantiated altera_up_avalon_parallel_port "SW"
+Info: CPU_NIOS2_instruction_master_translator: "sys_TP3" instantiated altera_merlin_master_translator "CPU_NIOS2_instruction_master_translator"
+Info: CPU_NIOS2_jtag_debug_module_translator: "sys_TP3" instantiated altera_merlin_slave_translator "CPU_NIOS2_jtag_debug_module_translator"
+Info: CPU_NIOS2_instruction_master_translator_avalon_universal_master_0_agent: "sys_TP3" instantiated altera_merlin_master_agent "CPU_NIOS2_instruction_master_translator_avalon_universal_master_0_agent"
+Info: CPU_NIOS2_jtag_debug_module_translator_avalon_universal_slave_0_agent: "sys_TP3" instantiated altera_merlin_slave_agent "CPU_NIOS2_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: CPU_NIOS2_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "sys_TP3" instantiated altera_avalon_sc_fifo "CPU_NIOS2_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "sys_TP3" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "sys_TP3" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "sys_TP3" instantiated altera_merlin_router "id_router"
+Info: id_router_001: "sys_TP3" instantiated altera_merlin_router "id_router_001"
+Info: id_router_002: "sys_TP3" instantiated altera_merlin_router "id_router_002"
+Info: burst_adapter: "sys_TP3" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: rst_controller: "sys_TP3" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "sys_TP3" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "sys_TP3" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: "sys_TP3" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux_002: "sys_TP3" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_mux: "sys_TP3" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file C:/Users/khalil/Desktop/SESNUM/TP3/sys_TP3/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "sys_TP3" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file C:/Users/khalil/Desktop/SESNUM/TP3/sys_TP3/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: width_adapter: "sys_TP3" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file C:/Users/khalil/Desktop/SESNUM/TP3/sys_TP3/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/khalil/Desktop/SESNUM/TP3/sys_TP3/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: irq_mapper: "sys_TP3" instantiated altera_irq_mapper "irq_mapper"
+Info: sys_TP3: Done sys_TP3" with 31 modules, 136 files, 2901003 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
